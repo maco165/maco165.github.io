@@ -29,7 +29,7 @@ https://maco165.github.io/
 ## このリポジトリについて
 
 - GitHub Pages で配信する静的サイト
-- 中身は `index.html` と `css/style.css` だけ。ビルド工程なし、JavaScript なし
+- 中身は `index.html`、`css/style.css`、`images/favicon.svg` の 3 ファイル。ビルド工程なし、JavaScript なし
 - フォントは Google Fonts (JetBrains Mono / Space Grotesk / Noto Sans JP)
 - アイコンはインライン SVG
 
