@@ -195,7 +195,17 @@ img {
   margin-right: 0;
 }
 
+.works-img {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
 .works-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  box-sizing: border-box;
   border: 1px solid #e6e6e6;
 }
 
