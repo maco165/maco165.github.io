@@ -214,7 +214,9 @@ main {
  Hero
 ---------------------------------*/
 .hero {
-  padding: 112px var(--pad-x) 96px;
+  position: relative;
+  overflow: hidden;
+  padding: 112px var(--pad-x) 140px;
   background-image: radial-gradient(circle at 1px 1px, #1B2230 1px, transparent 0);
   background-size: 28px 28px;
 }
@@ -358,6 +360,10 @@ main {
   color: var(--accent);
 }
 
+.terminal-muted {
+  color: var(--muted);
+}
+
 .cursor {
   display: inline-block;
   width: 9px;
@@ -375,6 +381,104 @@ main {
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+/* Hamster */
+.hero-floor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 72px;
+  pointer-events: none;
+}
+
+.ham-roam {
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+
+.ham-sleep {
+  position: absolute;
+  left: 70%;
+  bottom: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ham-roam {
+    display: block;
+    animation: roam 20s linear infinite;
+  }
+
+  .ham-bob {
+    animation: bob 0.24s ease-in-out infinite alternate;
+  }
+
+  .ham .fa {
+    animation: paw 0.24s ease-in-out infinite alternate;
+  }
+
+  .ham .fb {
+    animation: paw 0.24s ease-in-out infinite alternate-reverse;
+  }
+
+  .ham-sleep {
+    display: none;
+  }
+}
+
+@keyframes roam {
+  0% {
+    left: -8%;
+    transform: scaleX(1);
+  }
+
+  42% {
+    left: 64%;
+    transform: scaleX(1);
+  }
+
+  50% {
+    left: 64%;
+    transform: scaleX(1);
+  }
+
+  51% {
+    left: 64%;
+    transform: scaleX(-1);
+  }
+
+  93% {
+    left: -8%;
+    transform: scaleX(-1);
+  }
+
+  94%,
+  100% {
+    left: -8%;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes bob {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes paw {
+  from {
+    transform: translateX(-4px);
+  }
+
+  to {
+    transform: translateX(4px);
   }
 }
 
@@ -556,5 +660,11 @@ main {
 
   .hero-row {
     gap: 32px;
+  }
+
+  .ham,
+  .ham-sleep {
+    width: 72px;
+    height: 50px;
   }
 }
