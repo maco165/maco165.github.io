@@ -18,9 +18,10 @@ https://maco165.github.io/
   - 技術: Python / discord.py / OANDA API
   - リポジトリ: https://github.com/maco165/ForexAlertBot-discord.py
 - **anime-guide**
-  - アニメ作品の世界観を図で解説する、非公式のガイド。AI (Claude) がまとめ、誤りは Issue や Pull Request で直せる。公開中は「鋼の錬金術師 FULLMETAL ALCHEMIST」。
+  - アニメ作品の世界観を図で解説する、非公式のガイド。AI (Claude) がまとめ、誤りは Issue や Pull Request で直せる。
   - 技術: Markdown / SVG / Claude
-  - リポジトリ: https://github.com/maco165/anime-guide
+  - 公開: https://maco165.github.io/anime-guide/
+  - ソース: https://github.com/maco165/anime-guide
 
 ## Contact
 
