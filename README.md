@@ -22,6 +22,11 @@ https://maco165.github.io/
   - 技術: Markdown / SVG / Claude
   - 公開: https://maco165.github.io/anime-guide/
   - ソース: https://github.com/maco165/anime-guide
+- **Rust Analysis**
+  - ゲーム Rust の公式の変更点を日本語でまとめ、全アイテムの値を表にした、非公式のサイト。
+  - 技術: Python / HTML / CSS / Claude
+  - 公開: https://maco165.github.io/rust-patch-notes/
+  - ページ: https://github.com/maco165/rust-patch-notes (生成したページだけ。作る仕組みとデータは非公開)
 
 ## Contact
 
