@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@500;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <script src="js/trade.js" defer></script>
 </head>
 
 <body>
@@ -101,6 +102,52 @@ qiita:   @maco165
       </div>
     </section>
     <!-- /Hero -->
+
+    <!-- AI Trade -->
+    <section class="section trade" id="trade">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">00 — AI TRADE</p>
+        </div>
+
+        <div class="trade-demo" aria-hidden="true">
+          <div class="trade-bar">
+            <div class="trade-cmd"><span class="prompt">$</span> hamster-ai trade --demo</div>
+            <div class="trade-stats">
+              <span><span class="trade-key">POS </span><span class="trade-val" data-trade="pos">FLAT</span></span>
+              <span><span class="trade-key">P&amp;L </span><span class="trade-val" data-trade="pnl">+0.00</span></span>
+              <span><span class="trade-key">TP </span><span class="trade-val trade-gold" data-trade="tp-count">0</span></span>
+            </div>
+          </div>
+
+          <div class="trade-stage">
+            <div class="trade-desk">
+              <svg width="220" height="170" viewBox="0 0 220 170" aria-hidden="true"><line x1="6" y1="141" x2="214" y2="141" stroke="#2A3341" stroke-width="2" stroke-linecap="round"></line><rect x="106" y="134" width="74" height="6" rx="3" fill="#2A3341"></rect><line x1="177" y1="133" x2="190" y2="88" stroke="#2A3341" stroke-width="6" stroke-linecap="round"></line><line x1="174" y1="129" x2="185" y2="91" stroke="#7CE38B" stroke-width="2" stroke-linecap="round" opacity="0.85"></line><g transform="translate(30 69) scale(0.95)"><ellipse cx="50" cy="79" rx="34" ry="3.5" fill="#000000" opacity="0.4"></ellipse><g class="trade-ham"><ellipse cx="36" cy="72" rx="6" ry="3.6" fill="#F3B3BE"></ellipse><ellipse cx="50" cy="72" rx="6" ry="3.6" fill="#E39AA8"></ellipse><ellipse class="trade-paw-b" cx="76" cy="71" rx="5.5" ry="3.3" fill="#E39AA8"></ellipse><ellipse class="trade-paw-a" cx="88" cy="71" rx="5.5" ry="3.3" fill="#F3B3BE"></ellipse><circle cx="17" cy="50" r="4" fill="#E8E2D8"></circle><ellipse cx="56" cy="48" rx="40" ry="25" fill="#F7F4EE"></ellipse><circle cx="84" cy="42" r="21" fill="#F7F4EE"></circle><ellipse cx="58" cy="64" rx="32" ry="8" fill="#E8E2D8" opacity="0.75"></ellipse><path d="M24 38 Q50 18 84 24 Q66 30 40 40 Q30 44 24 38 Z" fill="#D9D5D0" opacity="0.7"></path><circle cx="76" cy="23" r="7.5" fill="#A89C95"></circle><circle cx="76.5" cy="23.8" r="4.4" fill="#C9BDB6"></circle><circle cx="93" cy="37" r="3.3" fill="#15171C"></circle><circle cx="94.3" cy="35.8" r="1.1" fill="#FFFFFF"></circle><ellipse cx="95" cy="48" rx="5.5" ry="3.2" fill="#F6C3CB" opacity="0.8"></ellipse><ellipse cx="104.5" cy="43" rx="2.5" ry="2.1" fill="#EE95A6"></ellipse><path d="M104 46 L116 44 M104 48 L116 51" stroke="#B9B2A7" stroke-width="1" stroke-linecap="round" fill="none"></path></g></g></svg>
+              <div class="trade-coins" data-trade="coins"></div>
+              <div class="trade-wins" data-trade="wins">×0</div>
+              <div class="trade-gain" data-trade="gain"></div>
+              <div class="trade-name">HAMSTER-AI</div>
+            </div>
+
+            <div class="trade-chart">
+              <div class="trade-grid" style="top: 25%"></div>
+              <div class="trade-grid" style="top: 50%"></div>
+              <div class="trade-grid" style="top: 75%"></div>
+              <div class="trade-level trade-level-tp" data-trade="tp-line" hidden></div>
+              <div class="trade-level-label trade-gold" data-trade="tp-label" hidden></div>
+              <div class="trade-level" data-trade="entry-line" hidden></div>
+              <div class="trade-level-label" data-trade="entry-label" hidden></div>
+              <div class="trade-candles" data-trade="candles"></div>
+              <div class="trade-last" data-trade="last-line"></div>
+              <div class="trade-price" data-trade="price"></div>
+            </div>
+          </div>
+
+          <div class="trade-log" data-trade="log"></div>
+        </div>
+      </div>
+    </section>
+    <!-- /AI Trade -->
 
     <!-- Works -->
     <section class="section works" id="works">
