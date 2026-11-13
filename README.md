@@ -39,7 +39,8 @@ https://maco165.github.io/
 ## このリポジトリについて
 
 - GitHub Pages で配信する静的サイト
-- 中身は `index.html`、`css/style.css`、`images/favicon.svg` の 3 ファイル。ビルド工程なし、JavaScript なし
+- 中身は `index.html`、`css/style.css`、`js/trade.js`、`images/favicon.svg` の 4 ファイル。ビルド工程なし
+- JavaScript は `js/trade.js` だけ。AI TRADE のセクションで、ハムスターがデモの相場を売買するアニメーションを動かす。数字はページ内の乱数で、実際の相場や取引とはつながっていない
 - フォントは Google Fonts (JetBrains Mono / Space Grotesk / Noto Sans JP)
 - アイコンはインライン SVG
 
