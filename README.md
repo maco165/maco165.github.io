@@ -27,6 +27,11 @@ https://maco165.github.io/
   - 技術: Python / HTML / CSS / Claude
   - 公開: https://maco165.github.io/rust-patch-notes/
   - ページ: https://github.com/maco165/rust-patch-notes (生成したページだけ。作る仕組みとデータは非公開)
+- **kcna-dojo**
+  - Kubernetes の入門資格 KCNA-JP の学習サイト。コマンドや YAML の穴埋め・4 択をレッスンで解き、進捗はブラウザに残る。
+  - 技術: React / Vite / Astryx
+  - 公開: https://maco165.github.io/kcna-dojo/
+  - ソース: https://github.com/maco165/kcna-dojo
 
 ## Contact
 
