@@ -1075,6 +1075,17 @@ main {
   color: var(--muted);
 }
 
+.sfoi-stickers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sfoi-stickers img {
+  width: 148px;
+  height: 128px;
+}
+
 .sfoi-links {
   display: flex;
   flex-wrap: wrap;
