@@ -44,7 +44,8 @@ https://maco165.github.io/
 ## このリポジトリについて
 
 - GitHub Pages で配信する静的サイト
-- 中身は `index.html`、`css/style.css`、`js/trade.js`、`images/favicon.svg` の 4 ファイル。ビルド工程なし
+- 中身は `index.html`、`css/style.css`、`js/trade.js`、`images/` の画像 (`favicon.svg`・`og.png`・`sfoi.jpg`・スタンプの `sticker-*.webp`)。ビルド工程なし
+- AI TRADE の下に、ハムスター Sfoi Æ A-12 の紹介カード (写真・名前の由来・自作の LINE スタンプ 2 枚とそのリンク) がある。写真は GitHub のアイコンと同じもの
 - JavaScript は `js/trade.js` だけ。AI TRADE のセクションで、ハムスターがデモの相場を売買するアニメーションを動かす。数字はページ内の乱数で、実際の相場や取引とはつながっていない
 - フォントは Google Fonts (JetBrains Mono / Space Grotesk / Noto Sans JP)
 - アイコンはインライン SVG

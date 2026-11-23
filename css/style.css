@@ -843,13 +843,12 @@ main {
  Works
 ---------------------------------*/
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
 .card {
-  flex: 1 1 400px;
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -919,6 +918,58 @@ main {
   font-size: 13px;
   color: var(--accent);
   overflow-wrap: anywhere;
+}
+
+/* 代表作: 3 列のうち 2 列 × 2 段を占め、残り 5 枚で 3 × 3 を埋める */
+.card-featured {
+  grid-column: span 2;
+  grid-row: span 2;
+  justify-content: center;
+  gap: 28px;
+  padding: 48px;
+}
+
+.card-featured .icon-box {
+  transform: scale(1.25);
+  transform-origin: left center;
+}
+
+.card-featured .card-title {
+  font-size: 40px;
+}
+
+.card-featured .card-desc {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.card-featured .tags {
+  margin-top: 0;
+}
+
+@media (max-width: 960px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card-featured {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .card-featured {
+    grid-column: auto;
+    padding: 32px;
+  }
+
+  .card-featured .card-title {
+    font-size: 32px;
+  }
 }
 
 /*--------------------------------
@@ -1004,6 +1055,121 @@ main {
 }
 
 /*--------------------------------
+ Sfoi card
+---------------------------------*/
+.sfoi-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 32px;
+  padding: 36px 40px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.sfoi-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.sfoi-photo img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--line-2);
+}
+
+.sfoi-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.sfoi-cmd {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.sfoi-name {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.sfoi-sex {
+  font-size: 0.7em;
+  color: #F6A5B8;
+}
+
+.sfoi-origin {
+  max-width: 640px;
+  color: var(--text-2);
+  line-height: 1.8;
+}
+
+.sfoi-origin-en {
+  max-width: 640px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.sfoi-stickers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sfoi-stickers img {
+  width: 148px;
+  height: 128px;
+}
+
+.sfoi-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.sfoi-sticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  background: var(--chip);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sfoi-sticker:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.sfoi-note {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/*--------------------------------
  Responsive
 ---------------------------------*/
 @media (max-width: 720px) {
@@ -1023,5 +1189,37 @@ main {
   .ham-sleep {
     width: 72px;
     height: 50px;
+  }
+
+  .sfoi-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 24px 20px;
+  }
+
+  .sfoi-photo {
+    width: auto;
+    height: 140px;
+  }
+
+  .sfoi-photo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sfoi-name {
+    font-size: 28px;
+  }
+
+  .sfoi-sticker {
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .sfoi-note {
+    width: 100%;
+    text-align: center;
   }
 }
