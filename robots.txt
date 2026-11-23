@@ -8,3 +8,4 @@ Sitemap: https://maco165.github.io/gantlo/sitemap.xml
 Sitemap: https://maco165.github.io/anime-guide/sitemap.xml
 Sitemap: https://maco165.github.io/ForexAlertBot-discord.py/sitemap.xml
 Sitemap: https://maco165.github.io/rust-patch-notes/sitemap.xml
+Sitemap: https://maco165.github.io/robrun-jp/sitemap.xml
